@@ -1,0 +1,38 @@
+.input
+  display: block;
+
+  &__label
+    display: block;
+    font-size: 11px
+    margin-bottom: 4px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 9px
+      margin-bottom: 6px
+
+  &__input
+    display: block
+    width: 100%
+    background: #f5f5f5
+    border: 1px solid #f5f5f5
+    border-radius: 10px
+    padding: 26px 22px
+    font-size: 16px
+    anim()
+    @media (max-width: $breakpoint-md - 1)
+      padding: 21px 18px;
+
+    &:hover
+      border-color: #cce6f6
+
+    &:focus
+      border-color: #2f9adc
+
+    &.wpcf7-not-valid
+      border-color: #f33d3c
+
+    &--textarea
+      resize: none
+      min-width 100%
+      max-width 100%
+      line-height: 1.2
+

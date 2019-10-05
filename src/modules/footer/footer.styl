@@ -1,0 +1,82 @@
+.footer
+  background: #313131
+  padding: 40px 0
+  @media (max-width: $breakpoint-md - 1)
+    padding: 26px 0
+
+  &__container
+    display: flex;
+    align-items center
+    justify-content space-between
+    @media (max-width: $breakpoint-md - 1)
+      flex-direction column-reverse
+
+  &__aside
+    display contents
+    @media (max-width: $breakpoint-md - 1)
+      display: flex;
+      justify-content space-between
+      width: 100%
+      margin-bottom: 9px
+
+  &__socials
+    display: flex;
+    align-items center
+    justify-content center
+
+  &__social
+    display: flex
+    align-items center
+    justify-content center
+    width: 44px
+    height: 44px
+    background: #309bdb
+    border-radius: 50%
+    margin-right: 15px
+    anim()
+    @media (max-width: $breakpoint-md - 1)
+      width: 34px
+      height: 34px
+      margin-right: 10px
+
+    &:last-schild
+      margin-right: 0
+
+    &:hover
+      background: #4eaae1
+
+    svg
+      width: 14px
+      height: 14px
+      fill #fff
+
+  &__contacts
+    display: flex;
+    align-items center
+    @media (max-width: $breakpoint-md - 1)
+      flex-direction column
+      align-items flex-end
+
+  &__politic
+    font-size: 11px
+    font-weight: 500
+    color: #ffffff
+    opacity: .25
+    border-bottom: 1px solid #fff;
+    anim()
+
+    &:hover
+      opacity: 1
+      border-bottom: 1px solid $blue;
+
+  &__email
+    font-size: 13px
+    color: #ffffff
+
+  &__phone
+    margin-left: 35px
+    font-size: 13px
+    color: $blue
+    font-weight: 900
+    @media (max-width: $breakpoint-md - 1)
+      margin-left: 0

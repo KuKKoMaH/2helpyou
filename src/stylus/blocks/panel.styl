@@ -1,0 +1,27 @@
+.panel
+  background: #fff;
+  position: relative;
+
+  &, &:before, &:after
+    border-radius: 10px
+    anim()
+
+  &:before, &:after
+    content ""
+    display: block;
+    position: absolute;
+    top: 0
+
+  &:before
+    background: #6b625f
+    z-index: -2
+    bottom: -12px
+    left: 24px
+    right: 24px
+
+  &:after
+    background: #9c9693
+    z-index: -1
+    bottom: -6px
+    left: 12px
+    right: 12px

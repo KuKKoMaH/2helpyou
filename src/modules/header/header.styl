@@ -1,0 +1,87 @@
+.header
+  margin-top: 60px
+  @media (max-width: $breakpoint-lg - 1)
+    margin-top: 50px
+
+  .c
+    height: 104px
+    display: flex;
+    justify-content space-between
+    align-items center
+    @media (max-width: $breakpoint-lg - 1)
+      height: 91px
+
+  &__logo
+    @media (max-width: $breakpoint-md - 1)
+      width: 116px
+      height: 16px
+
+  &__title
+    font-size: 12px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 9px
+
+  &__content
+    position: relative;
+    font-size: 10px
+    @media (max-width: $breakpoint-md - 1)
+      margin-left: auto;
+
+    span
+      color: $blue
+
+  &__clock
+    position: absolute;
+    fill: $blue
+    width: 16px
+    height: 16px
+    right: 100%
+    margin-right: 8px
+    top: -2px
+
+  &__value
+    display: flex;
+    align-items center
+    @media (max-width: $breakpoint-lg - 1)
+      flex-direction column
+      align-items flex-start
+
+  &__item
+    margin-left: 14px
+    @media (max-width: $breakpoint-lg - 1)
+      margin-left: 0
+    &:first-child
+      margin-left: 0
+
+  &__big
+    font-size: 15px
+
+  &__aside
+    display: flex;
+    align-items center
+
+  &__phone
+    font-size: 20px
+    margin-right: 30px
+    @media (max-width: $breakpoint-md - 1)
+      display: none;
+
+  &__tel
+    svg
+      display: inline-block;
+      width: 11px
+      height: 11px
+      fill: #fff
+
+    &:after
+      content: ''
+      display: inline-block;
+      width: 1px
+      height: 11px
+      background: rgba(#fff, .25)
+      margin-left: 14px
+      margin-right: 14px
+
+  &__btn
+    @media (max-width: $breakpoint-lg - 1)
+      display: none;

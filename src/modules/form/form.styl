@@ -1,0 +1,89 @@
+.form
+  background: url(./form-bg.jpg) 50% 50% no-repeat
+  background-size: cover;
+  padding: 100px 0 113px
+  @media (max-width: $breakpoint-md - 1)
+    padding: 50px 0 38px
+
+  &__container
+    display: flex;
+    align-items center
+    position: relative;
+    z-index: 1
+    @media (max-width: $breakpoint-lg - 1)
+      flex-direction column
+
+  &__aside
+    width 340px
+    margin-right 60px
+    flex-shrink 0
+    @media (max-width: $breakpoint-lg - 1)
+      width: 220px
+      margin: 0 auto 27px
+      text-align: center;
+
+  &__title
+    color: #ffffff
+    font-size: 26px
+    line-height: 1.55
+    font-weight: 400
+    @media (max-width: $breakpoint-lg - 1)
+      font-size: 16px
+
+    span
+      font-size: 40px
+      font-weight: 900
+      @media (max-width: $breakpoint-lg - 1)
+        font-size: 24px
+        display: block;
+        margin-bottom: 15px
+
+  &__panel
+    padding: 42px 50px
+    display: flex;
+    align-items flex-start
+    @media (max-width: $breakpoint-md - 1)
+      flex-direction column
+      padding: 24px 30px
+
+  &__info
+    padding-right: 40px
+    font-size: 13px
+    @media (max-width: $breakpoint-md - 1)
+      text-align: center;
+      padding-right: 0
+      font-size: 11px
+      line-height: 1.75
+      margin-bottom: 7px
+
+  &__label
+    font-weight: 900
+    font-size: 18px
+    margin-bottom: 13px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 13px
+      margin-bottom: 7px
+
+  &__form
+    width: 370px
+    flex-shrink 0
+    position: relative;
+    z-index: 1
+    @media (max-width: $breakpoint-md - 1)
+      width: 100%;
+
+    .btn
+      width: 100%
+
+  &__note
+    font-size: 11px
+    text-align: center;
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 9px
+
+    a
+      color: $blue
+      text-decoration: underline;
+
+      &:hover
+        text-decoration: none;

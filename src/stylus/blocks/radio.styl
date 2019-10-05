@@ -1,0 +1,41 @@
+.radio
+  cursor: pointer;
+
+  input
+    display: none
+
+  &__label
+    position: relative
+    display: flex
+    align-items center
+    anim()
+
+    &:not(:empty):before
+      margin-right: 16px
+
+    &:before, &:after
+      content: ''
+      display: block
+
+    &:before
+      width: 25px
+      height: 25px
+      border-radius: 2px
+      background: #f3f3f3
+
+    &:after
+      position: absolute
+      left: 8px
+      top: 8px
+      width: 11px
+      height: 11px
+      border-radius: 50%
+      background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDQ4LjggMzQxLjciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0Mi44IDI3MC4zTDM1LjcgMTYzLjIgMCAxOTguOWwxNDIuOCAxNDIuOCAzMDYtMzA2TDQxMy4xIDB6Ii8+PC9zdmc+") 50% 50% no-repeat
+      opacity 0
+      anim()
+
+    input:checked ~ &
+      font-weight: 500
+
+      &:after
+        opacity 1

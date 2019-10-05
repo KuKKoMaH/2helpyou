@@ -1,0 +1,36 @@
+.popup
+  max-width 470px
+  background: #ffffff
+  margin: 0 auto 0
+  position: relative
+  border-radius: 10px
+  padding: 40px 50px 50px
+  z-index: 1
+  @media (max-width: $breakpoint-md - 1)
+    margin: 0 14px
+    text-align: center;
+    padding: 25px 30px 30px
+    margin-top: 50px
+
+  &--text
+    max-width 720px
+    padding: 25px 10px 30px
+
+
+  &__title
+    font-size: 22px
+    font-weight: 900
+    margin-bottom: 15px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 13px
+      margin-bottom: 20px
+
+  &__text
+    font-size: 15px
+    margin-bottom: 40px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 11px
+      margin-bottom: 25px
+
+  .btn
+    width: 100%

@@ -1,0 +1,115 @@
+.about
+  padding: 88px 0 100px
+  @media (max-width: $breakpoint-md - 1)
+    padding: 53px 0 39px
+
+  &__container
+    display: flex;
+    max-width 1000px
+    padding: 0 15px
+    margin: 0 auto
+    @media (max-width: $breakpoint-md - 1)
+      flex-direction column
+      padding: 0 20px
+
+  &__content
+    flex: 1
+    min-width 0
+
+    .btn
+      @media (max-width: $breakpoint-md - 1)
+        width: 100%
+
+  &__title
+    margin-bottom: 33px;
+    line-height: 1.45;
+    @media (max-width: $breakpoint-md - 1)
+      margin-bottom: 18px
+
+  &__text
+    font-size: 14px
+    line-height: 1.75
+    margin-bottom: 43px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 11px
+      line-height: 1.95
+      margin-bottom: 23px
+
+  &__aside
+    flex: 1
+    min-width 0
+    margin-top: 12px
+    @media (max-width: $breakpoint-md - 1)
+      margin-top: 30px
+
+  &__panel
+    margin-left: 65px
+    @media (max-width: $breakpoint-lg - 1)
+      margin-left: 20px
+    @media (max-width: $breakpoint-md - 1)
+      margin: 0 auto
+      max-width 280px
+
+    &:before
+      background: #ececec
+
+    &:after
+      background: #dedede
+
+  &__slider
+    overflow: hidden;
+    border-radius: 10px
+
+  &__items
+    display: flex;
+
+  &__item
+    flex-shrink 0
+
+  &__img
+    height: 555px
+    background: 50% 50% no-repeat;
+    background-size: cover
+    @media (max-width: $breakpoint-md - 1)
+      height: 370px
+
+  &__nav
+    width: 44px
+    height: 44px
+    border-radius: 10px
+    background: #ffffff
+    position: absolute;
+    bottom 20px
+    right: 0
+    anim()
+    //@media (max-width: $breakpoint-lg - 1)
+    //  top: 30px
+
+    &:hover
+      background: $blue
+
+      svg
+        fill: #f5f5f5
+
+    svg
+      display: block;
+      fill $blue
+      width: 100%
+      height: 16px
+      anim()
+
+    &--prev
+      right: 69px
+      @media (max-width: $breakpoint-md - 1)
+        right: 50%
+        margin-right: 5px
+
+    &--next
+      right: 15px
+      @media (max-width: $breakpoint-md - 1)
+        right: auto;
+        left: 50%
+        margin-left: 5px
+
+      svg
+        transform rotate(180deg)

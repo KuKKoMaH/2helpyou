@@ -1,0 +1,56 @@
+.btn
+  position: relative
+  display: inline-flex
+  align-items center
+  justify-content center
+  flex-direction column
+  background: linear-gradient(to bottom, #f6e18c 0%, #feda68 100%)
+  min-width 250px
+  border-radius: 10px
+  padding: 0 33px
+  color: $black
+  font-size: 13px
+  font-weight: 600
+  text-align: center;
+  height: 76px
+  margin-bottom: 4px
+  cursor: pointer
+  @media (max-width: $breakpoint-md - 1)
+    min-width auto
+    height: auto;
+    padding: 17px 22px
+    max-height 76px
+  //transition all 0.1s linear !important
+
+  &:before
+    content ''
+    position: absolute;
+    border-radius: 10px
+    left: 0
+    right: 0
+    top: 0
+    bottom: -4px
+    z-index: -1
+    background: #c1a759
+
+  &:focus
+    outline 0
+
+  &:hover
+    background: linear-gradient(to bottom, #f8e59d 0%, #fde080 100%)
+
+    &:before
+      background: #d4b85f
+
+
+  &:active
+    margin-top: 2px
+    margin-bottom: 2px
+
+    &:before
+      bottom: -2px
+
+  span
+    display: block;
+    font-size: 12px
+    font-weight: 400

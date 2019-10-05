@@ -1,0 +1,157 @@
+.testimonials
+  padding: 86px 0 85px
+  @media (max-width: $breakpoint-lg - 1)
+    padding: 52px 0 45px
+  .c
+    position: relative;
+
+  &__title
+    margin-bottom: 85px
+    @media (max-width: $breakpoint-lg - 1)
+      text-align: center;
+      margin-bottom: 22px
+
+  &__slider
+    overflow: hidden;
+    @media (max-width: $breakpoint-lg - 1)
+      position: relative;
+
+  &__items
+    display: flex;
+
+  &__item
+    flex-shrink 0
+    display: flex;
+    padding-bottom: 12px
+    align-items center
+    @media (max-width: $breakpoint-lg - 1)
+      flex-direction column
+
+  &__info
+    text-align: center;
+    margin-right: 50px
+    display: flex;
+    flex-direction column
+    align-items center
+    @media (max-width: $breakpoint-lg - 1)
+      margin-bottom: 20px
+      margin-right: 0
+
+  &__image
+    display: block;
+    margin: 0 auto 33px
+    border-radius: 50%
+    @media (max-width: $breakpoint-lg - 1)
+      margin-bottom: 14px
+
+  &__name
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 6px
+    @media (max-width: $breakpoint-lg - 1)
+      font-size: 14px
+      margin-bottom: 8px
+
+  &__desc
+    font-size: 12px
+    margin-bottom: 38px
+    @media (max-width: $breakpoint-lg - 1)
+      font-size: 11px
+      margin-bottom: 14px
+
+  &__btn
+    margin-bottom: 23px
+
+  &__link
+    display: inline-block;
+    font-size: 11px
+    font-weight: 600
+    border-bottom: 1px solid #2f9bdc;
+    margin-top: 16px
+    anim()
+
+    &:hover
+      color: #2f9bdc
+      border-bottom-color: transparent
+
+  &__panels
+    display: flex;
+    @media (max-width: $breakpoint-lg - 1)
+      flex-direction column
+
+  &__panel
+    padding: 33px 40px
+    flex: 1
+
+    &--problem
+      margin-right: 30px
+      background: #f5f5f5
+      @media (max-width: $breakpoint-lg - 1)
+        margin: 0 0 23px
+
+      &:before
+        background: #dedede;
+
+      &:after
+        background: #ececec
+
+    &--solution
+      background: #2d9ada
+      color: #ffffff
+
+      &:before
+        background: #cae6f6
+
+      &:after
+        background: #97cded
+
+    p
+      font-size: 14px
+      line-height: 1.75
+
+    *:last-child
+      margin-bottom: 0
+
+  &__subtitle
+    font-size: 16px
+    font-weight: 800
+    margin-bottom: 14px
+
+  &__nav
+    width: 44px
+    height: 44px
+    border-radius: 10px
+    background: #f5f5f5
+    position: absolute;
+    top: 0
+    right: 0
+    anim()
+    @media (max-width: $breakpoint-lg - 1)
+      top: 30px
+
+    &:hover
+      background: $blue
+
+      svg
+        fill: #f5f5f5
+
+    svg
+      display: block;
+      fill $blue
+      width: 100%
+      height: 16px
+      anim()
+
+    &--prev
+      right: 69px
+      @media (max-width: $breakpoint-lg - 1)
+        right: auto;
+        left: 0
+
+    &--next
+      right: 15px
+      @media (max-width: $breakpoint-lg - 1)
+        right: 0
+
+      svg
+        transform rotate(180deg)

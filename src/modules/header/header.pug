@@ -1,0 +1,19 @@
+header.header
+  .c
+    .header__main
+      img.header__logo(src='modules/header/logo.png' width='155' height='21')
+      .header__title ЮРИДИЧЕСКИЕ УСЛУГИ
+
+    .header__content
+      svg.header__clock: use(xlink:href="#clock")
+      .header__label Режим работы
+      .header__value
+        .header__item ПН - ПТ: #[span.header__big 10#[sup 00] - 19#[sup 00]]
+        .header__item СБ - ВС: #[span ПО ЗАПИСИ]
+
+    .header__aside
+      a.header__phone(href='tel:+7 (927) 287-80-00') +7 (927) 287-80-00
+      a.callBtn.header__btn.popup__opener(href='#callback')
+        .header__tel: svg: use(xlink:href="#phone")
+        | Заказать звонок
+

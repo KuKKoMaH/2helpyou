@@ -1,0 +1,25 @@
+.testimonials
+  .c
+    h2.testimonials__title РЕКОМЕНДАЦИИ НАШИХ КЛИЕНТОВ
+    .testimonials__slider
+      .testimonials__items
+        each i in [1,2,3]
+          .testimonials__item
+            .testimonials__info
+              img.testimonials__image(src='modules/testimonials/avatar.jpg')
+              .testimonials__name Прохор Михайлов
+              .testimonials__desc Генеральный директор#[br]ОАО «ГазСтальНефть»
+              .testimonials__btn: a.btn(href='#') СВЯЗАТЬСЯ С ЮРИСТОМ
+              a.testimonials__link(href='#') БЛАГОДАРСТВЕННОЕ ПИСЬМО
+              a.testimonials__link(href='#') ВИДЕООТЗЫВ
+            .testimonials__panels
+              .panel.testimonials__panel.testimonials__panel--problem
+                .testimonials__subtitle ПРОБЛЕМА
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+
+              .panel.testimonials__panel.testimonials__panel--solution
+                .testimonials__subtitle  РЕШЕНИЕ
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis.
+
+      button.testimonials__nav.testimonials__nav--prev: svg: use(xlink:href="#arrow")
+      button.testimonials__nav.testimonials__nav--next: svg: use(xlink:href="#arrow")
