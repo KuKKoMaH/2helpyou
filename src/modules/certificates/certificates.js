@@ -1,12 +1,8 @@
 import initSlider  from '../../js/initSlider';
 import initGallery from '../../js/initGallery';
 
-initGallery({
-  $items: $('.certificates__item'),
-});
-
 initSlider('.certificates__slider', {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween:  10,
   loop:          true,
   wrapperClass:  'certificates__items',
@@ -17,10 +13,14 @@ initSlider('.certificates__slider', {
   },
   breakpoints:   {
     768:  {
-      slidesPerView: 4,
+      slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 6,
+      slidesPerView: 4,
     },
   },
+});
+
+initGallery({
+  $items: $('.certificates__item'),
 });
