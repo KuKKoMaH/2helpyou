@@ -8,7 +8,7 @@
         span по вопросу взыскания долга
     img.hero__image(src='modules/hero/hero-image.png')
     .hero__aside
-      .panel.hero__panel
+      a.panel.hero__panel.popup__opener(href='#heroInfo')
         .hero__icon: svg: use(xlink:href="#check")
         | #[span Подготовка#[br] всех документов] включена#[br] в стоимость услуг
       .panel.hero__panel
@@ -17,3 +17,14 @@
       .panel.hero__panel
         .hero__icon: svg: use(xlink:href="#check")
         | #[span Стоимость услуг]#[br] составляет #[span 10% от суммы]#[br] иска, но не менее 25 000 руб.
+
+.hidden
+  #heroInfo.popup
+    .popup__text
+      p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+      p: b Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+      ul
+        li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
