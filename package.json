@@ -60,7 +60,7 @@
     "selectize": "^0.12.6",
     "slick-carousel": "^1.8.1",
     "smooth-scroll": "^16.0.3",
-    "swiper": "^5.0.4",
+    "swiper": "^6.5.1",
     "tiny-slider": "^2.9.1",
     "vanilla-lazyload": "^12.0.0"
   }
